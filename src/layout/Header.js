@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu } from "semantic-ui-react";
+import { Menu, Icon, Button } from "semantic-ui-react";
 
 export default class Header extends Component {
   state = { activeItem: "inicial" };
@@ -28,11 +28,17 @@ export default class Header extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Menu position="right">
+
             <Menu.Item
               name="logout"
               active={activeItem === "logout"}
               onClick={this.handleItemClick}
-            />
+            >
+              <Button icon basic circular labelPosition='left'>
+                <Icon name="user circle" />
+                <div>José Mario</div>
+              </Button>
+            </Menu.Item>
           </Menu.Menu>
         </Menu>
       </header>
