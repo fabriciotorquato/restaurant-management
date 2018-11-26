@@ -10,7 +10,7 @@ export default class MenuHeaderVertical extends Component {
     const { activeItem } = this.state || {};
 
     return (
-      <Menu vertical>
+      <Menu vertical className="menu">
         <Menu.Item>
           <Menu.Header>Mais pedidos no jantar</Menu.Header>
           <Menu.Menu>

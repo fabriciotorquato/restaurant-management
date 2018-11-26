@@ -10,7 +10,7 @@ export default class Header extends Component {
     const { activeItem } = this.state;
 
     return (
-      <div>
+      <header >
         <Menu pointing secondary>
           <Menu.Item
             name="inicial"
@@ -35,7 +35,7 @@ export default class Header extends Component {
             />
           </Menu.Menu>
         </Menu>
-      </div>
+      </header>
     );
   }
 }
